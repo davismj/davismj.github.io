@@ -1,0 +1,89 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "_variables";
+@import "_layout";
+
+.hide-mobile {
+  display: none;
+}
+
+html {
+  font-size: 90%;
+}
+
+body {
+  z-index: -1;
+}
+
+nav {
+  height: 78px;
+  z-index: 1;
+  background: rgba(252,252,252,0.92);
+  border-bottom: 2px solid rgba(32,32,32,0.3);
+
+  div {
+    width: 320px;
+    margin: 0 auto;
+    
+    .avatar {
+      height: 78px;
+      padding: $unit;
+      border-radius: 50%;
+      float: left;
+    }
+
+    h1 {
+      margin: 0;
+      padding: $unit 0 $unit/2;
+    }
+
+    ul {
+      margin-left:78px;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        font-size: $text-md;
+      }
+    }
+  }
+}
+
+main {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  width: 100vw;
+  padding-top: 78px + $unit;
+  z-index:-1;
+
+  article {
+
+    header {
+      font-size: $text-xl;
+    }
+
+    time {
+      font-size: $text-md;
+      margin-top: 6px;
+    }
+  }
+
+  form {
+
+    label {
+      width: 68px;
+    }
+
+    input {
+      width: 220px;
+    }
+  }
+}
+
+

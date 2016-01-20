@@ -1,0 +1,80 @@
+@mixin padded-v($px) {
+	padding-top: $px;
+	padding-bottom: $px;
+}
+@mixin padded-h($px) {
+	padding-left: $px;
+	padding-right: $px;
+}
+@mixin padded($px) {
+	@include padded-v($px);
+	@include padded-h($px);	
+}
+@mixin spaced-v($px) {
+	margin-top: $px;
+	margin-bottom: $px;
+}
+@mixin spaced-h($px) {
+	margin-left: $px;
+	margin-right: $px;
+}
+@mixin spaced($px) {
+	@include spaced-v($px);
+	@include spaced-h($px);	
+}
+
+@mixin col {
+	float: left; 
+	box-sizing: border-box;
+}
+
+@mixin clearfix {
+  	display: table;
+  	clear: both;
+  	width: 100%;
+}
+
+.row { 
+	content: "";
+	@include clearfix;
+}
+
+.row + .row {
+	margin-top: $unit;
+}
+
+.col-1-2 { 
+	@include col;
+	width: 50%;
+}
+
+.col-1-8 { 
+	@include col;
+	width: 12.5%;
+}
+
+[class*="col-"] + [class*="col-"] {
+	padding-left: $unit;
+}
+
+.full-width { 
+	width: 100%;
+}
+
+// alignment
+.text-left {
+	text-align: left!important;
+}
+.text-center {
+	text-align: center!important;
+}
+.text-right {
+	text-align: right!important;
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}

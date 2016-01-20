@@ -1,0 +1,49 @@
+---
+layout: default
+title: Contact Me
+category: contact
+permalink: /contact/
+---
+<h1>
+  Call me:
+  <a href="tel:8503295553">850 329 5553</a>
+</h1>
+
+<h1 style="line-height: 32px;">
+  Lurk me:
+  <a href="https://twitter.com/{{ site.twitter }}">
+    <img class="logo" src="/images/twitter.png" />
+  </a>
+  <a href="https://github.com/{{ site.github }}">
+    <img class="logo" src="/images/github.png" />
+  </a>
+  <a href="https://tumblr.com/blog/{{ site.tumblr }}">
+    <img class="logo" src="/images/tumblr.png" />
+  </a>
+  <a href="https://reddit.com/u/{{ site.reddit }}">
+    <img class="logo" src="/images/reddit.png" />
+  </a>
+</h1>
+
+<h1>Email me:</h1>
+<form action="//formspree.io/davis.matthewjames+davismj.me@gmail.com" method="POST">
+  <div class="row">
+    <label class="text-right">From:</label>
+    <input type="email" name="_replyto" />
+  </div>
+  <div class="row">
+    <label class="text-right">To:</label>
+    <a href="mailto:davis.matthewjames@gmail.com">
+      <input type="email" disabled value="davis.matthewjames@gmail.com" />
+    </a>
+  </div>
+  <div class="row">
+    <label class="text-right">Subject:</label>
+    <input type="text" name="subject" />
+  </div>
+  <textarea class="row" rows="5" name="description" placeholder="Body"></textarea>
+  <div class="row text-right">
+    <input type="submit" value="Send" />
+  </div>
+  <input type="hidden" name="_next" value="/thanks.html" />
+</form>

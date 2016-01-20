@@ -1,0 +1,25 @@
+---
+layout: post
+
+title: Getting started with Kyu and Aurelia
+author: Matthew James Davis
+thumb:
+blurb: Setting up a basic game-style project for Kyu using the Aurelia framework.
+
+category: blog
+tags: kyu game aurelia
+
+published: false
+---
+<h1>Aurelia?</h1>
+<p>We already decided that HTML5 would be the platform for the Kyu client. However, there are lots of ways go about this. Typically when creating games in HTML5, we would want to render our game on an HTML5 canvas. However, Kyu is a very simple game. Since it involves only static content--cards and a board--that are dragged and dropped, a canvas would be overkill, and the basic HTML5 drag and drop behavior.</p>
+
+<p>Since the Kyu client will be in the browser, but should feel like a native game, we will want to employ a JavaScript framework that gives us the snappy, responsive feel of a native app. Also, we intend on limiting the scope of Kyu, keeping it very simple at first and adding on new pieces as the application grows. Enter Aurelia. Aurelia is a JavaScript framework, written in ES6, for building browser-based applications with a native feel. It is extremely simple to get a basic application running, but has a powerful API for iteratively adding new functionality iteratively. In short, it's the perfect fit.</p>
+
+<h1>Getting Started with Aurelia</h1>
+- we forked from aurelia skel-nav
+- enhanced the build to serve the kyu-core as well, for real time updates
+- we removed the dependencies on bootstrap and fontawesome--we're going to need a fully customized ui
+- we removed navigation, we want fine grained control over the application view, no skipping to win screens ;)
+- we created a core view model and two views
+- only interested in view 2, so skip view 1 trick (to save dev time!)
