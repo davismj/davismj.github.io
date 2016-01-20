@@ -52,6 +52,7 @@ sass:
 exclude:
     - Gemfile
     - Gemfile.lock
+    - CNAME
     - LICENSE
     - README.md
     - davismj.sublime-project
