@@ -1,0 +1,20 @@
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+<script>
+	if (document.readyState != 'loading') {
+		layout();
+	} else {
+    	document.addEventListener('DOMContentLoaded', layout);
+  	}
+	function layout() {
+		var el = document.querySelector('{{ include.grid }}');
+		var opts = {
+			itemSelector: '{{ include.item }}',
+			columnWidth: {{ include.column }}
+		};
+		var grid = new Masonry(el, opts);
+		imagesLoaded(el, function() {
+			grid.layout(opts);	
+		});
+	}
+</script>
