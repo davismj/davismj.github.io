@@ -1,4 +1,0 @@
-@mixin transition($transition) {
-	-webkit-transition: unquote($transition);
-	transition: unquote($transition);	
-}
