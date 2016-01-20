@@ -54,3 +54,5 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - davismj.sublime-project
+    - davismj.sublime-workspace

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>Deploy Aurelia to GitHub Pages – Matthew James Davis</title>
+
+    <meta name="author" content="Matthew James Davis" />
+    <meta name="description" content="How to quickly deploy your new Aurelia app to GitHub pages." />
+    <meta name="keywords" content="aurelia,deploy,github,github-pages,tortoise-git" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,600' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/desktop.css" media="screen and (min-width: 641px) and (min-height: 641px)" />
+    <link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-width: 640px), screen and (max-height: 640px)" />
+    <link rel="alternate" type="application/rss+xml" title="Matthew James Davis" href="/feed.xml" />
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <a href="/"><img class="avatar" src="/images/me.jpg" />
+        <h1 class="text-center">Matthew James Davis</h1></a>
+        <p class="hide-mobile">Aurelia core team member Matthew James Davis is out to educate the community.</p>
+        <ul>
+          <a href="/blog/"><li class="active">Blog</li></a>
+          <a href="/portfolio/"><li class="">Portfolio</li></a>
+          <a href="/contact/"><li class="">Contact Me</li></a>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <article>
+	<header>
+		Deploy Aurelia to GitHub Pages
+		<time>24 Apr 2015</time>
+	</header>
+	<p>You&#39;ve just completed your first Aurelia app, and now it is time to show the world that you are Aurelia enabled. GitHub page is a quick, easy, and free hosting solution, perfect for showing off a demo, and today we&#39;re going to walk through this process. </p>
+
+<p>I&#39;m going to show two different methods: (a) using the git command line and (b) using TortoiseGit, a git gui for Windows. It is not a common tool, but I personally love it, so I wanted to demonstrate how to use it as well as contrast it with the command line.</p>
+
+<p>For the sake of example, we&#39;re going to use a fork of the skeleton-navigation project. Head over to the <a href="https://github.com/aurelia/skeleton-navigation">Aurelia skeleton-navigation repo</a>, click &quot;fork&quot; in the upper right, and choose the account in which to fork the repo (probably your user account).</p>
+
+<h1>Using git command line</h1>
+
+<h2>Initialize GitHub repo (optional)</h2>
+
+<p>First, we are going to clone the newly forked repo locally. The first step will be to navigate to the folder where we will want to clone the repo locally.</p>
+
+<p>Click the navigation bar and type <code>cmd</code> to open the command line.</p>
+
+<p><img src="/images/blog/2015-4-24-ss1.png" alt="Opening a command window from the Windows Explorer"></p>
+
+<p>Type <code>git clone https://github.com/your-username/skeleton-navigation</code> to clone the repo at this location. Make sure you use the correct url for your repo.</p>
+
+<p>Because we are using the skeleton-navigation project, we will need to install the dependencies and build the project. To do this, type <code>npm install -g gulp jspm</code>, then <code>npm install</code>, then <code>jspm install -y</code>, then <code>gulp build</code>.</p>
+
+<h2>Configure the GitHub Pages branch</h2>
+
+<p>GitHub pages will serve whatever is committed to the gh-pages branch, so we will create the branch and add the built files and dependencies to the branch.</p>
+
+<p>Type <code>git branch gh-pages</code> to create the branch.
+Type <code>git checkout gh-pages</code> to switch to the branch.</p>
+
+<p>Edit the <code>.gitignore</code> file and comment out the <code>jspm_packages</code> and <code>dist</code> paths to tell git to include files in these paths in the gh-pages branch.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">node_modules
+# jspm_packages
+bower_components
+.idea
+.DS_STORE
+# /dist
+</code></pre></div>
+<p>Type <code>git add *</code> to add the new files to the branch.
+Type <code>git commit -m &#39;Initalizing GitHub pages&#39;</code> to commit to the brnach with the given commit message.
+Type <code>git push origin gh-pages</code> to push to a new gh-pages branch on GitHub.</p>
+
+<p>Your new project will be hosted at your-username.github.io/skeleton-navigation.</p>
+
+<h1>Using TortoiseGit</h1>
+
+<p>First, we are going to clone the newly forked repo locally. The first step will be to navigate to the folder where we will want to clone the repo locally. Right click within the folder and click &quot;Git Clone&quot;. Make sure that the URL is set to the URL of your Repo and the Directory is set to the desired directory.</p>
+
+<p><img src="/images/blog/2015-4-24-ss2.png" alt="Git Clone dialog"></p>
+
+<p>Because we are using the skeleton-navigation project, we will need to install the dependencies and build the project. To do this, open a command prompt in the project directory and type <code>npm install -g gulp jspm</code>, then <code>npm install</code>, then <code>jspm install -y</code>, then <code>gulp build</code>.</p>
+
+<h2>Configure the GitHub Pages branch</h2>
+
+<p>GitHub pages will serve whatever is committed to the gh-pages branch, so we will create the branch and add the built files and dependencies to the branch.</p>
+
+<p>Right click the project directory and navigate TortoiseGit &gt; Create Branch. Name the branch &quot;gh-pages&quot; and hit okay.</p>
+
+<p>Right click the projet directory again and navigate TortoiseGit &gt; Switch/Checkout. Select the &quot;gh-pages&quot; branch from the dropdown and hit okay.</p>
+
+<p>Inside the project directory, right click the jspm_packages directory and navigate TortoiseGit &gt; Add. Check &quot;Include ignored files&quot; and then &quot;Select/deselect all&quot; to select all. Repeat this process for the dist folder.</p>
+
+<p>Now, right click any folder and hit commit. Give the commit a message like &quot;Initalizing GitHub pages&quot; and hit Okay. In the window that pops up. Hit push and hit okay.</p>
+
+<p>Your new project will be hosted at your-username.github.io/skeleton-navigation.</p>
+
+<h1>Notes</h1>
+
+<p>The git command line portion of this blog was largely adapted from a <a href="http://stackoverflow.com/a/29858036/1981050">StackOverflow post</a> by <a href="http://stackoverflow.com/users/2597114/talves">Talves</a>.</p>
+
+<p>As Talves noted, this is not how you want to deploy your production application. There are, however, a few good uses for GitHub pages. For one, examples for blogs. It is excellent to be able to see both the source code and the code in action. Another, however, is a blog. This particular website is hosted on GitHub pages using a Ruby-based platform called Jekyll.</p>
+
+<h1>Links</h1>
+
+<p><a href="http://stackoverflow.com/questions/29831885/how-to-deploy-aurelia-to-github-pages-gh-pages#29858036">StackOverflow post from which this blog was derived</a>
+<a href="https://help.github.com/articles/user-organization-and-project-pages/">GitHub Pages</a><br/>
+<a href="https://help.github.com/articles/using-jekyll-with-pages/">GitHub Pages with Jekyll</a><br/>
+<a href="http://git-scm.com/documentation">git Documentation</a><br/>
+<a href="https://code.google.com/p/tortoisegit/">TortoiseGit</a><br/>
+<a href="http://davismj.github.io/skeleton-navigation/">Demo</a><br/></p>
+
+</article>
+<!-- 
+<footer>
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    
+	    var disqus_shortname = 'foursails'; 
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</footer> -->
+    </main>
+    
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-58706961-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  </body>
+</html>
