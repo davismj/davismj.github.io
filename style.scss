@@ -26,6 +26,15 @@ a {
   cursor: pointer;
 }
 
+button, input, textarea {
+  border: 1px solid rgb(169,169,169);
+  background: rgba(255,255,255,0.5);
+}
+
+button:focus, input:focus, textarea:focus {
+  background: white;
+}
+
 h1 {
   font-size: $text-xl;
   margin-top: $unit/2;
@@ -56,6 +65,8 @@ label, input {
 }
 
 nav { 
+  
+  background: rgba(252,252,252,0.92);
 
   ul {
 
@@ -150,21 +161,24 @@ main {
     }
   }
 
-  .content {
-    padding: 2*$unit;
-    border-radius: $unit;
-    background-color: $bg-2;
-  }
-
   form {
     max-width: 480px;
-
+  
     label {
-      display: inline-block;
+      display: block;
+      padding: 0;
+      margin-bottom: $unit;
     }
 
-    a > input {
-      margin-left:-4px;
+    input {
+      display: block;
+      width: 100%;
+    }
+
+    button {
+      font-size: $text-lg;
+      font-family: inherit;
+      padding: $unit/2 $unit;
     }
   }
 }
