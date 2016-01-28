@@ -64,6 +64,26 @@ label, input {
   padding: $unit/2;
 }
 
+blockquote {
+  padding: $unit;
+  margin: $unit;
+  background: rgba(192, 192, 192, 0.5);
+  font-family: serif;
+  text-indent: $unit;
+  font-style: oblique;
+  font-size: $text-lg;
+
+  p {
+    margin-bottom: 0;
+  }
+  p:before {
+    content: open-quote;
+  }
+  p:after {
+    content: close-quote;
+  }
+}
+
 nav { 
   
   background: rgba(252,252,252,0.92);
