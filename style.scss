@@ -150,10 +150,11 @@ main {
       list-style: decimal;
       list-style-position: inside;
       margin-bottom: $unit;
+      padding-left: 3*$unit;
     }
 
     li {
-      margin-bottom: $unit/2;
+      margin-bottom: $unit;
     }
 
     a {
