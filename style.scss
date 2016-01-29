@@ -35,6 +35,10 @@ button:focus, input:focus, textarea:focus {
   background: white;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1 {
   font-size: $text-xl;
   margin-top: $unit/2;
@@ -53,6 +57,13 @@ h4 {
 p {
   margin-bottom: $unit;
   line-height: 140%;
+
+  code {
+    font-family: monospace;
+    vertical-align: bottom;
+    padding: 4px;
+    background: rgb(216, 216, 216);
+  }
 }
 
 .logo {
@@ -66,12 +77,13 @@ label, input {
 
 blockquote {
   padding: $unit;
-  margin: $unit;
+  margin: 2*$unit;
   background: rgba(192, 192, 192, 0.5);
   font-family: serif;
   text-indent: $unit;
   font-style: oblique;
   font-size: $text-lg;
+  quotes: initial;
 
   p {
     margin-bottom: 0;
