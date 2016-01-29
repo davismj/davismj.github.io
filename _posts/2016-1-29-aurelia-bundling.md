@@ -4,16 +4,15 @@ layout: post
 title: Bundling Aurelia Applications
 author: Matthew James Davis
 category: blog
+thumb: blog/2016-1-29-aurelia-bundling.png
 blurb: Best practices for getting your Aurelia application optimized for deployment
 tags: aurelia javascript ecmascript perfmatters
 
-published: false
+published: true
 ---
 On February 1st 2015, not one month into the development of Aurelia, someone posted this infamous question to Stack Overflow: [Why does <span style="background: #D1E1AD;color: #405A04;">the alpha version of</span> Aurelia load <s style="color: #A82400;background-color: #E5BDB2;">so</s> slowly?](http://stackoverflow.com/questions/28258956/why-does-the-alpha-version-of-aurelia-load-slowly) "My last test, showed it took 55 seconds to load the page with 135 requests." The Aurelia team took notice immediately.
 
-> Today, a bundled Aurelia application can load in under 1 second with only 5 requests maxing out under 300kb gzipped.
-
-It has been almost a full year since then, and bundling has reached maturity. Let's see how to set up a bundling workflow.
+It has been almost a full year since then, and bundling has reached maturity; today, a bundled Aurelia application can load in under 1 second with only 5 requests maxing out under 300kb gzipped. Let's see how to set up a bundling workflow.
 
 # The Bundle Task
 
@@ -45,7 +44,7 @@ var config = {
         'aurelia-templating-resources',
         'aurelia-loader-default',
 
-        // Next, we include the optional Aurelia depnencies. Your project 
+        // Next, we include the optional Aurelia dependencies. Your project 
         // may use dependencies not listed here.
         'aurelia-fetch-client',
         'aurelia-router',
@@ -147,5 +146,6 @@ In general, I **strongly** recommend bundling your entire application into a sin
 # Links
 [Aurelia Bundler GitHub project](https://github.com/aurelia/bundler)<br />
 [Skeleton Navigation bundle configuration](https://github.com/aurelia/skeleton-navigation/blob/master/skeleton-es2016/build/bundles.json)<br />
-[[OUTDATED: Sep 2015] Official Aurelia blog post](http://blog.durandal.io/2015/09/11/bundling-aurelia-apps/)<br />
-[[OUTDATED: Apr 2015] Best Practices for Bundling and Minification](http://patrickwalters.net/my-best-practices-for-aurelia-bundling-and-minification/)<br />
+[StackOverflow Question Revision History](http://stackoverflow.com/posts/28258956/revisions)
+[[OUTDATED] Official Aurelia blog post](http://blog.durandal.io/2015/09/11/bundling-aurelia-apps/)<br />
+[[OUTDATED] Best Practices for Bundling and Minification](http://patrickwalters.net/my-best-practices-for-aurelia-bundling-and-minification/)<br />
