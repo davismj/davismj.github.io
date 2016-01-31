@@ -70,6 +70,19 @@ p {
   vertical-align: middle;
 }
 
+.screenshots {
+
+  a {
+    display: inline-block;
+    margin: $unit/2;
+    text-decoration: none;
+  }
+}
+
+* + .screenshots {
+  margin-top: 2*$unit;
+}
+
 label, input {
   font-size: $text-md;
   padding: $unit/2;
@@ -178,9 +191,16 @@ main {
       margin-top: 0;
     }
 
+    p + .highlight { 
+      margin-top: $unit;
+    }
+
     ol {
       list-style: decimal;
       list-style-position: inside;
+    }
+
+    ol, ul {
       margin-bottom: $unit;
       padding-left: 3*$unit;
     }
