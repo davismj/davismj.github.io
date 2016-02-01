@@ -146,6 +146,6 @@ In general, I **strongly** recommend bundling your entire application into a sin
 # Links
 [Aurelia Bundler GitHub project](https://github.com/aurelia/bundler)<br />
 [Skeleton Navigation bundle configuration](https://github.com/aurelia/skeleton-navigation/blob/master/skeleton-es2016/build/bundles.json)<br />
-[StackOverflow Question Revision History](http://stackoverflow.com/posts/28258956/revisions)
+[StackOverflow Question Revision History](http://stackoverflow.com/posts/28258956/revisions)<br />
 [[OUTDATED] Official Aurelia blog post](http://blog.durandal.io/2015/09/11/bundling-aurelia-apps/)<br />
 [[OUTDATED] Best Practices for Bundling and Minification](http://patrickwalters.net/my-best-practices-for-aurelia-bundling-and-minification/)<br />
