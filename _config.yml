@@ -36,8 +36,8 @@ url: http://davismj.me/
 #
 markdown: kramdown
 kramdown:
-  syntax_highlighter: rouge
-permalink: /blog/:title/
+  input: GFM
+permalink: /:categories/:title/
 
 # The release of Jekyll Now that you're using
 version: v1.0.0
