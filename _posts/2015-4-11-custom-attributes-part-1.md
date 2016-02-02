@@ -92,7 +92,7 @@ This particular example uses Aurelia *conventions* to keep things simple. By def
 
 # Links
 
-[Live example](https://davismj.github.io/aurelia-ide/#/markdown-preview)
-[Full source on GitHub](https://github.com/davismj/aurelia-ide)
-[Babel 5 release notes](http://babeljs.io/blog/2015/03/31/5.0.0/)
+[Live example](https://davismj.github.io/aurelia-ide/#/markdown-preview)<br />
+[Full source on GitHub](https://github.com/davismj/aurelia-ide)<br />
+[Babel 5 release notes](http://babeljs.io/blog/2015/03/31/5.0.0/)<br />
 [Showdown docs](https://github.com/showdownjs/showdown)

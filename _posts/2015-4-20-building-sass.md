@@ -180,6 +180,6 @@ This general process should work for other css preprocessors, including scss and
 
 # Links
 
-[Full source on GitHub](https://github.com/davismj/skeleton-navigation-sass)
-[Sass Website](http://sass-lang.com/)
+[Full source on GitHub](https://github.com/davismj/skeleton-navigation-sass)<br />
+[Sass Website](http://sass-lang.com/)<br />
 [Less Website](http://lesscss.org/)

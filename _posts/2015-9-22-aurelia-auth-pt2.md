@@ -148,11 +148,11 @@ When writing this blog, I stumbled onto a bug where logging in, out, and back in
 
 # Links
 
-[Working Demo](https://davismj.github.io/aurelia-session-example)
-[Full Source in Github](https://github.com/davismj/aurelia-session-example)
-[App for Mocking REST APIs](http://www.mocky.io/)
-[Aurelia OAuth2 Plugin](http://blog.opinionatedapps.com/aureliauth-a-token-based-authentication-plugin-for-aurelia/)
-[Aurelia Auth Best Practices: Multiple Shells](http://davismj.me/blog/aurelia-login-best-practices-pt-1/)
-[Aurelia Getting Started Cheat Sheet](http://www.cheatography.com/erikch/cheat-sheets/aurelia-getting-started/)
-[Michael Lambert on App State Services](http://hobbit-on-aurelia.net/appstate/)
+[Working Demo](https://davismj.github.io/aurelia-session-example)<br />
+[Full Source in Github](https://github.com/davismj/aurelia-session-example)<br />
+[App for Mocking REST APIs](http://www.mocky.io/)<br />
+[Aurelia OAuth2 Plugin](http://blog.opinionatedapps.com/aureliauth-a-token-based-authentication-plugin-for-aurelia/)<br />
+[Aurelia Auth Best Practices: Multiple Shells](http://davismj.me/blog/aurelia-login-best-practices-pt-1/)<br />
+[Aurelia Getting Started Cheat Sheet](http://www.cheatography.com/erikch/cheat-sheets/aurelia-getting-started/)<br />
+[Michael Lambert on App State Services](http://hobbit-on-aurelia.net/appstate/)<br />
 [Patrick Walters on App Organization](http://patrickwalters.net/my-best-practices-for-aurelia-application-structure/)

@@ -84,7 +84,7 @@ Notice that we don't define a router in our login. In fact, there is no router i
 
 # Links
 
-[Working Demo](http://davismj.github.io/skeleton-navigation-login-shell)
-[Full source on GitHub](https://github.com/davismj/skeleton-navigation-login-shell)
-[Intialization Docs](http://aurelia.io/docs.htm# startup-and-configuration)
+[Working Demo](http://davismj.github.io/skeleton-navigation-login-shell)<br />
+[Full source on GitHub](https://github.com/davismj/skeleton-navigation-login-shell)<br />
+[Intialization Docs](http://aurelia.io/docs.htm# startup-and-configuration)<br />
 [Aurelia Object Docs](http://aurelia.io/docs.htm# the-aurelia-object)
