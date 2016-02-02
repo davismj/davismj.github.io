@@ -18,10 +18,11 @@ Sass is a common and powerful css preprocessor that helps keep styles and views 
 3. Configure our paths
 4. Add the build task
 
-#Installing the Sass Compiler
+# Installing the Sass Compiler
+
 Since the skeleton navigation project comes with a pretty elaborate gulpfile, we install gulp-sass, a sass compiler that hooks into gulp. Let's add the package to our `package.json` and run `npm install` to install the package.
 
-####package.json
+#### package.json
 ```json
 {
   "name": "aurelia-skeleton-navigation",
@@ -36,10 +37,11 @@ Since the skeleton navigation project comes with a pretty elaborate gulpfile, we
 }
 ```
 
-#Adding Sass to our Project
+# Adding Sass to our Project
+
 The skeleton navigation project comes equipped with a css file at `styles/styles.css`. Let's rename this file to `styles.sass` and update the syntax to match sass syntax.
 
-####styles.sass
+#### styles.sass
 ```sass
 body
     margin: 0
@@ -81,10 +83,11 @@ section
     max-width: 425px
 ```
 
-#Configuring our paths
+# Configuring our paths
+
 Now, since the end goal is to compile the `.sass` file and output it as `.css`, we need to tell gulp where to find the `.sass` file and we need to instruct our `index.html` to read the new `.css`. The skeleton navigation project is already configured to output all compiled files to the `/dist` folder and we're going to continue using that convention. We can instruct gulp where to find the new `.sass` file by modifying the `build/paths.js` file.
 
-####build/paths.js
+#### build/paths.js
 ```javascript
 module.exports = {
   ...
@@ -94,7 +97,7 @@ module.exports = {
 };
 ```
 
-####index.html
+#### index.html
 ```html
 <html>
   <head>
@@ -108,10 +111,11 @@ module.exports = {
 </html>
 ```
 
-#Adding the build task
+# Adding the build task
+
 Finally, we add a new `build-css` task to gulp. Since the task builds css, we will include it with our other build tasks in the `build/tasks/build.js` file. We will also make sure that the watch task in the `build/tasks.watch.js` knows about our new `build-css` task.
 
-####build/tasks/build.js
+#### build/tasks/build.js
 ```javascript
 ...
 
@@ -162,7 +166,7 @@ gulp.task('build', function(callback) {
 });
 ```
 
-####build/tasks/watch.js
+#### build/tasks/watch.js
 ```javascript
 gulp.task('watch', ['serve'], function() {
   ...
@@ -170,10 +174,12 @@ gulp.task('watch', ['serve'], function() {
 });
 ```
 
-#Notes
+# Notes
+
 This general process should work for other css preprocessors, including scss and less. In fact, the gulp-sass library will also compile `.scss` files. Make sure that you update your extensions in all of the steps above from `.sass` to your source of choice. Additionally, if you are using scss, you do not need the `{indentedSyntax: true}` argument, and can simply write `.pipe(sass())`.
 
-#Links
-[Full source on GitHub](https://github.com/davismj/skeleton-navigation-sass)<br />
-[Sass Website](http://sass-lang.com/)<br />
+# Links
+
+[Full source on GitHub](https://github.com/davismj/skeleton-navigation-sass)
+[Sass Website](http://sass-lang.com/)
 [Less Website](http://lesscss.org/)

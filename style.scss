@@ -54,18 +54,6 @@ h4 {
   font-style: italic;  
 }
 
-p {
-  margin-bottom: $unit;
-  line-height: 140%;
-
-  code {
-    font-family: monospace;
-    vertical-align: bottom;
-    padding: 4px;
-    background: rgb(216, 216, 216);
-  }
-}
-
 .logo {
   vertical-align: middle;
 }
@@ -191,14 +179,6 @@ main {
       margin-top: 2*$unit;
     }
 
-    h4 + .highlight {
-      margin-top: 0;
-    }
-
-    p + .highlight { 
-      margin-top: $unit;
-    }
-
     ol {
       list-style: decimal;
       list-style-position: inside;
@@ -209,12 +189,16 @@ main {
       padding-left: 3*$unit;
     }
 
-    li {
+    a {
+      text-decoration: underline;
+    }
+
+    p {
       margin-bottom: $unit;
     }
 
-    a {
-      text-decoration: underline;
+    p, li {
+      line-height: 140%;
     }
   }
 

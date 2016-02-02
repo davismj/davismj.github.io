@@ -10,7 +10,7 @@ tags: aurelia javascript ecmascript perfmatters
 
 published: true
 ---
-On February 1st 2015, not one month into the development of Aurelia, someone posted this infamous question to Stack Overflow: [Why does <span style="background: #D1E1AD;color: #405A04;">the alpha version of</span> Aurelia load <s style="color: #A82400;background-color: #E5BDB2;">so</s> slowly?](http://stackoverflow.com/questions/28258956/why-does-the-alpha-version-of-aurelia-load-slowly) "My last test, showed it took 55 seconds to load the page with 135 requests." The Aurelia team took notice immediately.
+On February 1st 2015, not one month into the development of Aurelia, someone posted this infamous question to Stack Overflow: [Why does <span style="background:# D1E1AD;color:# 405A04;">the alpha version of</span> Aurelia load <s style="color:# A82400;background-color:# E5BDB2;">so</s> slowly?](http://stackoverflow.com/questions/28258956/why-does-the-alpha-version-of-aurelia-load-slowly) "My last test, showed it took 55 seconds to load the page with 135 requests." The Aurelia team took notice immediately.
 
 It has been almost a full year since then, and bundling has reached maturity; today, a bundled Aurelia application can load in under 1 second with only 5 requests maxing out under 300kb gzipped. Let's see how to set up a bundling workflow.
 
@@ -18,7 +18,7 @@ It has been almost a full year since then, and bundling has reached maturity; to
 
 First, let's install the `aurelia-bundler` package by opening a console and running `npm install aurelia-bundler --save-dev`. Then, we can build a gulp task that leverages the bundler:
 
-####build/tasks/bundle.js
+#### build/tasks/bundle.js
 ```javascript
 var gulp = require('gulp');
 var bundler = require('aurelia-bundler');
@@ -86,7 +86,7 @@ gulp.task('bundle', ['build', 'unbundle'], function() {
 
 When we run the `gulp bundle` task, what happens? The bundler processes all of the files listed above and their dependencies, concatenates them into a single minified javascript file, and updates the systemjs `config.js` file. The updated `config.js` file tells systemjs what files are in the package, so systemjs knows to fetch those modules from the bundle rather than their original location. Now, we are ready for deployment to a production environment!
 
-####config.js
+#### config.js
 ```javascript
   bundles: {
     "app-build": [
@@ -102,7 +102,7 @@ When we run the `gulp bundle` task, what happens? The bundler processes all of t
 
 If we ran `gulp watch` immediately following bundling, we would find that our project is now in one large, minified javascript file. While great for deployment, this will not work for development. Thus, we need to create an unbundle task in our `bundle.js` file. Luckily, this is quite straightforward.
 
-####build/tasks/bundle.js
+#### build/tasks/bundle.js
 ```javascript
 gulp.task('unbundle', function() {
   return bundler.unbundle(config);
@@ -111,7 +111,7 @@ gulp.task('unbundle', function() {
 
 We can make things pretty simple by adding `unbundle` as a dependency to our `gulp serve` task, instructing gulp to unbundle whenever we start our development server.
 
-####build/tasks/serve.js
+#### build/tasks/serve.js
 ```javascript
 gulp.task('serve', ['build', 'unbundle'], function(done) {
   browserSync({
@@ -124,7 +124,7 @@ gulp.task('serve', ['build', 'unbundle'], function(done) {
 
 There are several advanced settings in the `aurelia-bundler`, but there's one in particular that I want to talk about. Let's say we wanted to host a core bundle through a CDN, and build various applications on top of that. When bundling each application, we would want to exclude all the modules in the CDN-hosted bundle. If any of these were listed as dependencies, however, the `aurelia-bundler` would by default try to bundle them in. We can instruct the bundler to exclude dependencies by wrapping the file or glob with brackets in the config:
 
-####build/tasks/bundle.js
+#### build/tasks/bundle.js
 ```javascript
 var config = {
   bundles: {
@@ -135,17 +135,17 @@ var config = {
       	// for providing the dependencies for the **/*.js files.
         ['**/*.js']
       	... // etc
-    	]
-  	}
-	}
+      ]
+    }
+  }
 }
 ```
 
 In general, I **strongly** recommend bundling your entire application into a single file. Not only does this reduce requests to the server and complexity in the bundler configuration, it will most importantly achieve a better overall compression ratio in gzip, which should be enabled in your production environment. Note that this differs from the skeleton-navigation configuration as of today.
 
 # Links
-[Aurelia Bundler GitHub project](https://github.com/aurelia/bundler)<br />
-[Skeleton Navigation bundle configuration](https://github.com/aurelia/skeleton-navigation/blob/master/skeleton-es2016/build/bundles.json)<br />
-[StackOverflow Question Revision History](http://stackoverflow.com/posts/28258956/revisions)<br />
-[[OUTDATED] Official Aurelia blog post](http://blog.durandal.io/2015/09/11/bundling-aurelia-apps/)<br />
-[[OUTDATED] Best Practices for Bundling and Minification](http://patrickwalters.net/my-best-practices-for-aurelia-bundling-and-minification/)<br />
+[Aurelia Bundler GitHub project](https://github.com/aurelia/bundler)
+[Skeleton Navigation bundle configuration](https://github.com/aurelia/skeleton-navigation/blob/master/skeleton-es2016/build/bundles.json)
+[StackOverflow Question Revision History](http://stackoverflow.com/posts/28258956/revisions)
+[[OUTDATED] Official Aurelia blog post](http://blog.durandal.io/2015/09/11/bundling-aurelia-apps/)
+[[OUTDATED] Best Practices for Bundling and Minification](http://patrickwalters.net/my-best-practices-for-aurelia-bundling-and-minification/)
