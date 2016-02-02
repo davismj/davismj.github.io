@@ -36,6 +36,7 @@ url: http://davismj.me/
 #
 markdown: kramdown
 karmdown:
+	input: GFM
 	syntax_highlighter: rouge
 permalink: /blog/:title/
 
