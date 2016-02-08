@@ -23,6 +23,7 @@ avatar: /images/me.jpg
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: foursails
+disqus_url: http://www.foursails.co
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-58706961-2

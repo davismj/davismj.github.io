@@ -2,7 +2,7 @@
 layout: post
 
 title: Using a Gmail alias
-author: Matt Davis
+author: Matthew James Davis
 blurb: Creating and using Gmail aliases for extra functionality
 
 category: blog

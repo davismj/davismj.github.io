@@ -2,7 +2,7 @@
 layout: post
 
 title: Aurelia Authentication&#58; Multiple shells.
-author: Matt Davis
+author: Matthew James Davis
 thumb: blog/2015-8-15-login.png
 blurb: Creating a separate login-specific Aurelia root within your Aurelia app.
 

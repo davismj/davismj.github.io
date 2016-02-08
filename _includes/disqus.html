@@ -5,7 +5,7 @@
     
 	    var disqus_shortname = '{{ site.disqus }}'; 
 	    function disqus_config() {
-	    	this.page.url = 'http://www.foursails.co{{ page.url }}';
+	    	this.page.url = '{{ site.disqus_url }}{{ page.url }}';
     	}
 
 	    (function() {

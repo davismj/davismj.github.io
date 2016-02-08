@@ -2,7 +2,7 @@
 layout: post
 
 title: Using Sass with Aurelia
-author: Matt Davis
+author: Matthew James Davis
 thumb: blog/2015-4-20-sass.png
 blurb: How to Sass-enable your Aurelia build process.
 
