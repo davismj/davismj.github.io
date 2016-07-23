@@ -3,7 +3,6 @@ layout: post
 title: Pokémon Go Tricks&#58; Stay Awake
 author: Matthew James Davis
 category: blog
-thumb: blog/2016-7-21-pg-stay-awake.jpg
 blurb: The best trainers use this one simple trick to hatch eggs faster than everyone else.
 tags: Pokémon tricks
 
