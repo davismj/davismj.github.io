@@ -120,6 +120,10 @@ nav {
       color: $bg-1-text;
       background: $bg-1;
     }
+
+    li.subscribe > i {
+      margin-left: 2px;
+    }
   }
 }
 

@@ -4,6 +4,7 @@ layout: post
 title: Drag-and-drop in Aurelia
 author: Matthew James Davis
 category: blog
+thumb: blog/2016-7-25-aurelia-drag-and-drop.png
 blurb: Creating a drag-and-drop custom attribute in Aurelia using interact.js
 tags: aurelia drag-and-drop interactjs javascript ecmascript 
 
