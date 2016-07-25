@@ -30,6 +30,10 @@
         <h1 class="text-center">{{ site.author }}</h1></a>
         <p class="hide-mobile">{{ site.description }}</p>
         <ul>
+          <li id="subscription-button" class="subscribe">
+            <span class="hide-mobile">Subscribe</span>
+            <i class="fa fa-rss" style="margin-left: 4px"></i>
+          </li>
           <a href="/blog/"><li class="{% if page.category == 'blog' %}active{% endif %}">Blog</li></a>
           <a href="/portfolio/"><li class="{% if page.category == 'portfolio' %}active{% endif %}">Portfolio</li></a>
           <a href="/contact/"><li class="{% if page.category == 'contact' %}active{% endif %}">Contact</li></a>
@@ -41,5 +45,9 @@
       {{ content }}
     </main>
     
-    {% include analytics.html %}  </body>
+    {% include analytics.html %}
+
+    <script src="/subscription.js"></script>
+
+  </body>
 </html>
