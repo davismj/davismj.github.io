@@ -38,6 +38,13 @@ button:focus, input:focus, textarea:focus {
 strong {
   font-weight: bold;
 }
+em {
+  font-style: italic;
+}
+.center {
+  display: block;
+  text-align: center;
+}
 
 h1 {
   font-size: $text-xl;
