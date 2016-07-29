@@ -187,14 +187,18 @@ main {
       margin-top: 2*$unit;
     }
 
+    ul {
+      list-style: initial;
+    }
+
     ol {
       list-style: decimal;
-      list-style-position: inside;
     }
 
     ol, ul {
       margin-bottom: $unit;
       padding-left: 3*$unit;
+      list-style-position: inside;
     }
 
     a {
