@@ -214,6 +214,10 @@ main {
 
     p {
       margin-bottom: $unit;
+
+      > code {
+        white-space: nowrap;
+      }
     }
 
     p, li {
