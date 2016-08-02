@@ -128,10 +128,10 @@ When I started writing the example project for this article, I began using the e
 
 # Links
 
-[Demo Page](http://davismj.me/aurelia-semantic)<br />
-[Progress Bar at Semantic-UI](http://semantic-ui.com/modules/progress.html)<br />
-[Custom Elements at Aurelia HUB](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-custom-elements/1)<br />
-[Databinding cheat sheet](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/cheat-sheet/5)<br />
-[EasyWebpack global jQuery config](https://github.com/easy-webpack/config-global-jquery/)<br />
-[Semantic-ui with Webpack](http://stackoverflow.com/questions/32909708/using-semantic-ui-and-jquery-with-webpack)<br />
-[jQuery dependency with Webpack](http://stackoverflow.com/questions/28969861/managing-jquery-plugin-dependency-in-webpack)<br />
+[Demo Page](http://davismj.me/aurelia-semantic)
+[Progress Bar at Semantic-UI](http://semantic-ui.com/modules/progress.html)
+[Custom Elements at Aurelia HUB](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-custom-elements/1)
+[Databinding cheat sheet](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/cheat-sheet/5)
+[EasyWebpack global jQuery config](https://github.com/easy-webpack/config-global-jquery/)
+[Semantic-ui with Webpack](http://stackoverflow.com/questions/32909708/using-semantic-ui-and-jquery-with-webpack)
+[jQuery dependency with Webpack](http://stackoverflow.com/questions/28969861/managing-jquery-plugin-dependency-in-webpack)
