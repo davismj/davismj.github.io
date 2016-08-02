@@ -131,7 +131,7 @@ export class HomeViewModel {
 Though the article was presented as a how-to drag-and-drop, the more important concept here is how to integrate a third-party library with Aurelia, a question that is asked repeatedly on StackOverflow and Gitter. Though the specifics of what goes into the code will vary from library to library, integrating any library with Aurelia follows this basic strategy.
 
 # Links
-[interact.js](http://interactjs.io/)
-[Drag-and-drop in Aurelia with Dragula](https://www.danyow.net/drag-and-drop-with-aurelia/)
-[Drag-and-drop in Aurelia using Sortable](http://ilikekillnerds.com/2015/09/aurelia-and-dragdrop-using-sortable/)
-[Native drag-and-drop with Aurelia](http://stackoverflow.com/questions/28357530/drag-and-drop-in-aurelia-not-working)
+[interact.js](http://interactjs.io/)<br />
+[Drag-and-drop in Aurelia with Dragula](https://www.danyow.net/drag-and-drop-with-aurelia/)<br />
+[Drag-and-drop in Aurelia using Sortable](http://ilikekillnerds.com/2015/09/aurelia-and-dragdrop-using-sortable/)<br />
+[Native drag-and-drop with Aurelia](http://stackoverflow.com/questions/28357530/drag-and-drop-in-aurelia-not-working)<br />

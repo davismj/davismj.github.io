@@ -39,11 +39,11 @@ Each of these three monetization strategies is still used in the software indust
 
 I have made broad generalizations about the categories of video game history in order to keep things simple and understandable. In fact, all three of these categories extend well beyond the time periods I have specified, and not all games in each period or category fit the given model. I would argue that these time periods are a "best fit" for the contributions of their respective category. Likewise, these models are a "best fit" for the development and success of their respective category.
 
-[Gamification by Kevin Werbach on Coursera](https://www.coursera.org/learn/gamification)
-[OpenBadges by Mozilla](http://openbadges.org/)
-[Why does gamification work?](http://weplay.co/gamification-success-stories/)
-[Website builder DevHub gets users hooked by “gamifying” its service](http://venturebeat.com/2010/08/25/devhub-scores-engagement-increase-by-gamifying-its-web-site-creation-tools/)
-[Gamification on Wikipedia](https://en.wikipedia.org/wiki/Gamification)
-[Arcade games on Wikipedia](https://en.wikipedia.org/wiki/Arcade_game)
-[Video game consoles on Wikipedia](https://en.wikipedia.org/wiki/Video_game_console)
-[Social network games on Wikipedia](https://en.wikipedia.org/wiki/Social_network_game)
+[Gamification by Kevin Werbach on Coursera](https://www.coursera.org/learn/gamification)<br />
+[OpenBadges by Mozilla](http://openbadges.org/)<br />
+[Why does gamification work?](http://weplay.co/gamification-success-stories/)<br />
+[Website builder DevHub gets users hooked by “gamifying” its service](http://venturebeat.com/2010/08/25/devhub-scores-engagement-increase-by-gamifying-its-web-site-creation-tools/)<br />
+[Gamification on Wikipedia](https://en.wikipedia.org/wiki/Gamification)<br />
+[Arcade games on Wikipedia](https://en.wikipedia.org/wiki/Arcade_game)<br />
+[Video game consoles on Wikipedia](https://en.wikipedia.org/wiki/Video_game_console)<br />
+[Social network games on Wikipedia](https://en.wikipedia.org/wiki/Social_network_game)<br />
