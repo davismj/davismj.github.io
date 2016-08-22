@@ -128,7 +128,7 @@ When I started writing the example project for this article, I began using the e
 
 # Links
 
-[Demo Page](http://davismj.me/aurelia-semantic)<br />
+[Demo Page](http://davismj.me/aurelia-semantic/#/progress)<br />
 [Progress Bar at Semantic-UI](http://semantic-ui.com/modules/progress.html)<br />
 [Custom Elements at Aurelia HUB](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-custom-elements/1)<br />
 [Databinding cheat sheet](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/cheat-sheet/5)<br />
