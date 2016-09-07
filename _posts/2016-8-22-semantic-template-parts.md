@@ -4,7 +4,6 @@ layout: post
 title: Replaceable Parts and CSS Frameworks in Aurelia 
 author: Matthew James Davis
 blurb: Using Aurelia replaceable parts to integrate CSS frameworks into an Aurelia application.
-thumb: blog/2016-8-222-semantic-template-parts.png
 
 category: blog
 tags: aurelia javascript ecmascript custom element attribute semantic-ui
