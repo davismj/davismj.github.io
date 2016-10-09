@@ -3,7 +3,7 @@ element.addEventListener('click', function(event) {
 
 	var record = new XMLHttpRequest();
 	record.open('POST', 'https://formspree.io/davis.matthewjames@gmail.com');
-	record.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+	record.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');	
 	record.send('subject=Subscription%20Button%20Clicked');
 
 	var email = window.prompt('What is your email address?');
