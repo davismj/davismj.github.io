@@ -31,6 +31,10 @@ button, input, textarea {
   background: rgba(255,255,255,0.5);
 }
 
+button {
+  cursor: pointer;
+}
+
 button:focus, input:focus, textarea:focus {
   background: white;
 }
@@ -243,6 +247,70 @@ main {
       font-size: $text-lg;
       font-family: inherit;
       padding: $unit/2 $unit;
+    }
+  }
+}
+
+section.modal {
+  position: absolute;
+  transition: background 250ms ease-in;
+
+  &:not(.visible) {
+    background: rgba(0,0,0,0);
+
+    > div {
+      transform: scale(0,0);
+    }
+  }
+
+  &.visible {
+    background: rgba(0,0,0,0.8);
+
+    > div {
+      transform: scale(1,1);
+    }
+  }
+
+  > div {
+    padding: 2*$unit;
+    background: rgb(252,252,252);
+    margin: 20% auto;
+    border-radius: $unit;
+    transform-origin: center;
+    transition: transform 250ms ease-in-out;
+
+    label {
+      display: block;
+      margin-top: $unit*2;
+      font-weight: bold;
+
+      input {
+        display: block;
+        width: 100%;
+        margin-top: $unit/2;
+
+        &.invalid {
+          border-color: red;
+        }
+      }
+    }
+
+    div {
+      margin-top: $unit;
+      text-align: right;
+
+      button#subscribe-button {
+        font-size: $text-lg;
+      }
+
+      button#cancel-button {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background: inherit;
+        font-size: inherit;
+        font-style: underline;
+      }
     }
   }
 }

@@ -2,3 +2,11 @@
 	-webkit-transition: unquote($transition);
 	transition: unquote($transition);	
 }
+
+@keyframes error {
+    0% {border-color: inherit;}
+    25% {border-color: red;}
+    50% {border-color: inherit;}
+    75% {border-color: red;}
+    100% {border-color: inherit;}
+}

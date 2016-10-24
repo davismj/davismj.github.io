@@ -44,6 +44,31 @@
     <main>
       {{ content }}
     </main>
+
+    <section id="subscription-modal" class="modal">
+      <div id="modal-content">
+        <form onsubmit="return false;">
+          <h1>Get posts directly to your inbox</h1>
+          <p>I'll notify you of posts the day they come out. Don't worry, you'll never get more than one email a day, and I'll never share your email address with anyone else.</p>
+          <label>
+            Your email address
+            <input type="email" id="subscription-email" />
+          </label>
+          <div>
+            <button id="subscribe-button" type="submit">Subscribe</button>
+            or <button id="cancel-button">cancel</button>
+          </div>
+        </form>
+
+        <template id="subscribe-thanks">
+          <div style="margin:auto; text-align: center">
+            <img src="/images/thanks.png" />
+            <h1>Thanks for signing up!</h1>
+          </div>
+        </template>
+
+      </div>
+    </section>
     
     {% include analytics.html %}
 
