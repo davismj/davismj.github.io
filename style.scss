@@ -256,6 +256,7 @@ section.modal {
   transition: background 250ms ease-in;
 
   &:not(.visible) {
+    pointer-events: none;
     background: rgba(0,0,0,0);
 
     > div {
