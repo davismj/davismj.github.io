@@ -78,3 +78,10 @@
 .pull-right {
 	float: right;
 }
+
+.text-xs { font-size: $text-xs!important; }
+.text-sm { font-size: $text-sm!important; }
+.text-md { font-size: $text-md!important; }
+.text-lg { font-size: $text-lg!important; }
+.text-xl { font-size: $text-xl!important; }
+.text-xxl { font-size: $text-xxl!important; }
