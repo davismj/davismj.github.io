@@ -35,8 +35,8 @@ A replaceable part is a custom attribute within your custom element template tha
     <div class="title" part="title-template" replaceable>
         <i class="dropdown icon"></i>
         ${item.title}
-      </template>
     </div>
+
     <div class="content">
 
       <!-- The templating engine will replace the entire replacable element.
