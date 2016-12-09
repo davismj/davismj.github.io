@@ -114,7 +114,7 @@ Next, we use the custom element in our application, just like we use any other e
 
 ```html
 <template>
-  <require from="progressCustomElement"></require>
+  <require from="sProgressCustomElement"></require>
   <s-progress class="indicating" progress.bind="progress" label="{percent}% awesome" labeled></s-progress>
   <s-progress class="inverted" progress.bind="progress" labeled.one-way="showLabel"></s-progress>
 </template>
