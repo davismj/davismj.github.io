@@ -88,9 +88,9 @@ config.map([
 ```
 
 # Links
-
-[Original GitHub Feature Request Thread](https://github.com/aurelia/router/issues/83)
-[Parameter-Optional Route Feature Pull Request](https://github.com/aurelia/route-recognizer/pull/25)
-[Route Recognizer Spec examples](https://github.com/aurelia/route-recognizer/blob/master/test/route-recognizer.spec.js#L50-L86)
-[Jods4 on GitHub](https://github.com/jods4)
-[GoodUI](http://www.goodui.org/)
+<br />
+[Original GitHub Feature Request Thread](https://github.com/aurelia/router/issues/83)<br />
+[Parameter-Optional Route Feature Pull Request](https://github.com/aurelia/route-recognizer/pull/25)<br />
+[Route Recognizer Spec examples](https://github.com/aurelia/route-recognizer/blob/master/test/route-recognizer.spec.js#L50-L86)<br />
+[Jods4 on GitHub](https://github.com/jods4)<br />
+[GoodUI](http://www.goodui.org/)<br />
