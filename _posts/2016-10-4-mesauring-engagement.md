@@ -4,7 +4,6 @@ layout: post
 title: Easily Measuring Engagement with Formspree
 author: Matthew James Davis
 category: blog
-thumb: blog/2016-5-4-punchcard.jpg
 blurb: How I was able begin tracking my blogs conversion ratio in under 15 minutes.
 tags: engagement conversion
 

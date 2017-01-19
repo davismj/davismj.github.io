@@ -18,3 +18,7 @@ Enter Toptal. I had discovered this company over a year ago, but only recently a
 They have a relatively involved application process, very similar to a proper job interview. I have been in contact with a few reps, submitted a resume, and filled out a short profile on their site. I have a phone interview scheduled for later next week. As part of the interview process, they've asked me to write a blog. The idea is that by writing a blog they can get a better idea of who I am and what kind of work I can do. But let's be real, they want publicity; and I'm happy to give it to them. You see, I would gladly trust the marketing of my brand to any company that can get me to market their brand and feel like I'm helping myself. Brilliant.
 
 Apparently, it is not too difficult to scout one of these Toptal-solicited blogs, but I haven't found many blogs describing the outcome of their experience with Toptal. Look forward to a follow up blog in a few months describing my experience with Toptal. And if you are looking for help on your next Aurelia project, please look me up on the [Toptal Aurelia developers network](https://www.toptal.com/aurelia).
+
+# Links
+
+[Toptal](https://www.toptal.com/aurelia)

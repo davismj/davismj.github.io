@@ -4,8 +4,8 @@
 	if (document.readyState != 'loading') {
 		layout();
 	} else {
-    	document.addEventListener('DOMContentLoaded', layout);
-  	}
+  	document.addEventListener('DOMContentLoaded', layout);
+	}
 	function layout() {
 		var el = document.querySelector('{{ include.grid }}');
 		var opts = {
