@@ -31,9 +31,9 @@ Building and maintaining a library will...
   <p>My name is Matthew James Davis and I run my own software consulting company, <a href="http://foursails.co/">Foursails Technology Group</a>, in addition to working on the Aurelia team. I recently used your library interact.js in a project for a customer with great success. I followed this project up with a <a href="http://davismj.me/blog/aurelia-drag-and-drop/">blog</a> on how to use interact.js in <a href="http://aurelia.io/">Aurelia</a>, and I'm considering building an offical aurelia-interact.js plugin.</p>
 
   <p>I love the open source community, but I want to make sure that whatever I work on will build and support my business as well. This would be my first independently maintained open source project, and I want your advice on how to do it right. Did building interact.js open doors for you? If you could go back, would you do it all over again? What would you do differently?</p>
-  
+  <br />
   Thanks in advance,<br />
-  Matthew James Davis<br />
+  Matthew James Davis
 </blockquote>
 
 # Taye's Response
@@ -51,9 +51,9 @@ Building and maintaining a library will...
   <p>Recognition from the project hasn't led to many commercial gigs but I joined <a href="http://upwork.com/">Upwork.com</a> and mentioning the project in job proposals has definitely been a big factor in the jobs that I've gotten from there. I usually only apply to very specific projects involving SVG and/or pointer input – things like graphical editors, customization tools, etc. I'd like to think that mentioning "open source" and "standards expert" in job proposals really helps.</p>
 
   <p>If I would start a similar project again, I'd probably make it <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL3</a> (at least at the start) and offer a paid commercial license. Perhaps it's better for everyone that interact.js is MIT licensed and that it helped it gain popularity, but sometimes the economics of it feels a little unfair. For a time I was getting a few small donations per year which, now that I think about it, stopped a little while after I put ads on the site which now bring in more than the donations used to. The donations and emails of gratitude are very encouraging and I appreciate them very much, but having a commercial license <i>might</i> have been more lucrative and motivational.</p>
-
+  <br />
   All the best,<br />
-  Taye<br />
+  Taye
 
 </blockquote>
 
