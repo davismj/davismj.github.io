@@ -4,7 +4,7 @@ layout: post
 title: Getting Started with Aurelia CLI and Boostrap
 author: Matthew James Davis
 category: blog
-thumb: blog/2016-1-27-aurelia-cli-bootstrap.jpg
+thumb: blog/2016-1-25-aurelia-cli-bootstrap.jpg
 blurb: Get started with Aurelia and Bootstrap in 5 minutes using the Aurelia CLI.
 tags: aurelia aurelia-cli bootstrap javascript ecmascript
 
