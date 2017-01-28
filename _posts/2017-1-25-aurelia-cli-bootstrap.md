@@ -230,8 +230,8 @@ Finally, we need to use Bootstrap in our application. Let's copy in the HTML fro
 
     <h1>Pokémon</h1>
 
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" repeat.for="item of items">
-      <div class="panel panel-default">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default" repeat.for="item of items">
         <div class="panel-heading" role="tab" id="heading-${$index}">
           <h4 class="panel-title">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-${$index}" aria-expanded="true" aria-controls="collapse-${$index}">
