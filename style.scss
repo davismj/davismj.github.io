@@ -73,17 +73,79 @@ h4 {
   cursor: pointer;
 }
 
-.screenshots {
+.screenshots { 
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 
-  a {
-    display: inline-block;
-    margin: $unit/2;
-    text-decoration: none;
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-radius: 0;
+    padding: 0 5px;
+    background: $bg-2;
+    color: $bg-2-text;
+    font-size: 4rem;
+   
+    &.prev,
+    &:first-child {
+      left: 0;
+    }
+
+    &.next,
+    &:last-child {
+      right: 0;
+    }
+  }
+
+  .images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    > a {
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none;
+      overflow: hidden;
+      @include transition('margin-left 1s ease-in-out');
+
+      > img {
+        width: 100%;
+      }
+    }
+  }
+
+  .monitor {
+    pointer-events: none;
+
+    > img {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
 }
 
-* + .screenshots {
-  margin-top: 2*$unit;
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+  }
 }
 
 label, input {

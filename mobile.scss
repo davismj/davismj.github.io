@@ -19,6 +19,37 @@ body {
   z-index: -1;
 }
 
+.screenshots {
+  width: 100%;
+
+  button {
+    height: 67.2%;
+    margin-top: 3.8%;
+    opacity: 0.5;
+      
+    &.prev,
+    &:first-child {
+      margin-left: 3.8%;
+    }
+
+    &.next,
+    &:last-child {
+      margin-right: 3.8%;
+    }
+  }
+
+  .images {
+    height: 67.2%;
+    width: 92.4%;
+    margin: 3.8%;
+
+    > a {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 nav {
   height: 78px;
   z-index: 1;

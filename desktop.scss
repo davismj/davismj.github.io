@@ -6,9 +6,48 @@
 //
 
 @import "_variables";
+@import "_animation";
 
 html {
   font-size: 100%;
+}
+
+.screenshots {
+  width: 504px;
+  height: 386px;
+  margin: auto;
+
+  button {
+    margin-top: 20px;
+    height: 262px;
+    opacity: 0.2;
+    @include transition('opacity 0.3s');
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.prev,
+    &:first-child {
+      margin-left: 20px;
+    }
+
+    &.next,
+    &:last-child {
+      margin-right: 20px;
+    }
+  }
+
+  .images {
+    width: 464px;
+    height: 386px;
+    margin: 20px;
+
+    > a {
+      width: 464px;
+      height: 262px;
+    }
+  }
 }
 
 nav { 
