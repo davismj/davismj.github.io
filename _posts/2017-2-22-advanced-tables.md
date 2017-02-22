@@ -161,7 +161,7 @@ Finally, let's say we have a custom element with complex, specific logic that be
 
 # Notes
 
-This doesn't work in IE11 at the time of writing. There has been some talk directly from Rob about the possibility of implementing a template start and end syntax, inspired by ng-repeat-start and ng-repeat-end from Aurelia 1. I personally hated this syntax as it was misleading as to *what* was being repeated. The thread is available here: [https://github.com/aurelia/html-template-element/issues/3]()
+This doesn't work in IE11 at the time of writing. There has been some talk directly from Rob about the possibility of implementing a template start and end syntax, inspired by ng-repeat-start and ng-repeat-end from Angular 1. I personally hated this syntax as it was misleading as to *what* was being repeated. The thread is available here: [https://github.com/aurelia/html-template-element/issues/3](https://github.com/aurelia/html-template-element/issues/3)
 
 # Links
 
