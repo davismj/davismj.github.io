@@ -167,3 +167,4 @@ This doesn't work in IE11 at the time of writing. There has been some talk direc
 
 [Aurelia Templating Basics](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-basics)<br />
 [Aurelia Templating on Github](https://github.com/aurelia/templating)<br />
+[Dynamically adding row templates to a table in Aurelia – as-element](http://www.sobell.net/dynamically-adding-row-templates-to-a-table-in-aurelia/)<br />
