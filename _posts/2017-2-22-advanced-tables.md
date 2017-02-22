@@ -165,5 +165,5 @@ This doesn't work in IE11 at the time of writing. There has been some talk direc
 
 # Links
 
-[Aurelia Templating Basics](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-basics)
-[Aurelia Templating on Github](https://github.com/aurelia/templating)
+[Aurelia Templating Basics](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-basics)<br />
+[Aurelia Templating on Github](https://github.com/aurelia/templating)<br />
