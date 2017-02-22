@@ -166,7 +166,7 @@ Now, let's install Bootstrap. Bootstrap is a tricky package. It depends on jQuer
 
 The default Aurelia CLI project bundles all of your project's dependencies and packages them into one optimized file. Since we've installed two new dependencies, we want to add them to the bundle. Unfortunately, as my reader noted, this requires hand editing the project's `aurelia.json` file.
 
-### aurelia.json
+#### aurelia.json
 ```javascript
 {
   ...
@@ -218,7 +218,7 @@ The default Aurelia CLI project bundles all of your project's dependencies and p
 
 Finally, we need to use Bootstrap in our application. Let's copy in the HTML from the [Accordion Example](http://getbootstrap.com/javascript/#collapse-example-accordion). We will need to use the require tag in this view to have Aurelia bring in the Bootstrap css.
 
-### app.html
+#### app.html
 ```html
 <template>
 
@@ -252,7 +252,7 @@ Finally, we need to use Bootstrap in our application. Let's copy in the HTML fro
 
 The collapse control in Bootstrap requires the Bootstrap javascript file. Let's import it in the associated view model and add some data to drive the view.
 
-### app.js
+#### app.js
 ```javascript
 // Importing libraries can be tricky as there are different syntaxes based on how the library was written.
 // Bootstrap was written to export its functions to a global '$' variable, which means that the library
