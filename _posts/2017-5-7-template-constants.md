@@ -101,7 +101,7 @@ Finally, we can load the hooks into our view using `<require>` just like any oth
 
 # Notes 
 
-This pattern is not limited to Enums, but I recommend only using this pattern to add constant values to your templates. Furthermore, you can use [`aurelia.globalResources`](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-html-behaviors-introduction/5) to introduce globally available constants. For example, you can use the following code to expose the current date and time anywhere in your view:
+This pattern is not limited to Enums, but I recommend only using this pattern to add read-only values to your templates. Furthermore, you can use [`aurelia.globalResources`](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-html-behaviors-introduction/5) to introduce globally available constants. For example, you can use the following code to expose the current date and time anywhere in your view:
 
 ```javascript
 beforeBind(view: View) {
