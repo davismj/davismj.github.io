@@ -19,7 +19,7 @@ Aurelia provides many tools for extending the behavior of templates, including `
 
 First, lets assume that we have the following enum:
 
-#### mediaTypes.ts
+#### mediaType.ts
 
 ```javascript
 // Pro Tip: By starting our enum at 1, we ensure that all values in the enum 
@@ -40,7 +40,7 @@ Next, lets create a `ViewEngineHooks` for our `MediaType` enum:
 ```javascript
 import { ViewEngineHooks, View } from 'aurelia-framework';
 // import { viewEngineHooks } from 'aurelia-binding';
-import { MediaType } from './mediaTypes.ts';
+import { MediaType } from './mediaType.ts';
 
 // By convention, Aurelia will look for any classes of the form 
 // {name}ViewEngineHooks and load them as a ViewEngineHooks resource. We can
@@ -78,7 +78,7 @@ Finally, we can load the hooks into our view using `<require>` just like any oth
     MediaTypeViewEngineHooks and recognize it as ViewEngineHooks. It fires
     the beforeBind(view) method, which adds MediaType as a variable to our
     view's binding context. -->
-  <require from="./mediaTypesViewEngineHooks"></require>
+  <require from="./mediaTypeViewEngineHooks"></require>
 
   <form>
     <div> 
@@ -87,7 +87,7 @@ Finally, we can load the hooks into our view using `<require>` just like any oth
 
         <!-- When we iterate, we need to iterate over the MediaTypes variable,
           which is the iterable version of the MediaType enum. -->
-        <option value.bind="MediaType[type]" repeat.for="type of MediaTypes">${type}</option>
+        <option model.bind="MediaType[type]" repeat.for="type of MediaTypes">${type}</option>
       </select>
 
       <!-- We can use the MediaType enum to get the string associated with the 
