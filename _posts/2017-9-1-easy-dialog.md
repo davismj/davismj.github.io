@@ -48,11 +48,11 @@ So I can see that I a modal component seems to make sense as a custom element. L
 <template class="modal ${visible ? 'modal-visible' : ''}">
 
   <!-- I want my modal to have a "greyed out" background, so I need to have a 
-    box in my modal that will contain the moda dialog box content -->
+    box in my modal that will contain the modal dialog box content. -->
   <div class="modal-content">
 
     <!-- I also might want to add an optional header element. Since I want it
-      to be optional, I will probably be using the :empty selector, so I need
+      to be optional, I will probably be using the ":empty" selector, so I need
       to make sure there is no whitespace in the element. I give it a slot and
       call the slot "header". -->
     <div class="modal-header"><slot name="header"></slot></div>
@@ -99,7 +99,7 @@ export class ModalCustomElement {
     this.visible = false;
   }
   
-  // I create an open() function. By using view-model.ref in my viewModel, I will 
+  // I create an open() function. By using view-model.ref in my view model, I will 
   // be able to call this function to open the modal.
   open() {
     this.visible = true;
@@ -132,24 +132,24 @@ So far, pretty simple. Now lets see how to consume the modal component. The desi
 <template>
   <require from="./modalCustomElement"></require>
   
-  <!-- Since I use view-model.ref to add the modal view model to the binding
-    context, I can just call open directly on the modal view model. -->
+  <!-- Since I use view-model.ref to add the modal view model to the app view 
+    model, I can just call open directly on the modal view model. -->
   <button click.delegate="modal.open()">Open Modal</button>
   
-  <!-- I use view-model.ref to set the variable testModal on my view model
-    to the modal's view model. This gives me access to the functions (and
-    variables) on the modal view model. I also set up an event listener
-    to listen for the closed event dispatched by the modal. -->
+  <!-- I use view-model.ref to set the variable modal on my view model to the
+    modal's view model. This gives me access to the functions (and variables)
+    on the modal view model. I also set up an event listener to listen for the
+    "closed" event dispatched by the modal. -->
   <modal view-model.ref="modal" closed.delegate="showTypedMessage()">
     
-    <!-- I'm gunna add a header here, just to make sure it works. -->
+    <!-- I add a header here just to make sure it works. -->
     <div slot="header">
       <b>Please type a message</b>
     </div>
     
     <!-- Since this content isn't relegated to a slot, Aurelia puts it in the
-      default slot, which is the .modal-body div. The beautiful thing here is
-      that the "typedMessage" binding is on my app view model. The modal
+      default slot, which is the ".modal-body" div. The beautiful thing here is
+      that the "typedMessage" variable is on my app view model. The modal
       does not need to deal with my business logic at all. It is just in the 
       business of creating modals. -->
     <label>
@@ -157,8 +157,7 @@ So far, pretty simple. Now lets see how to consume the modal component. The desi
       <input type="text" value.bind="typedMessage" />
     </label>
     
-    <!-- I'm going to stick with the default close button, to make sure it,
-      works, so I won't use the footer slot. -->
+    <!-- I don't use the footer slot to make sure the default close button works. -->
 
   </modal>
 </template>
@@ -176,7 +175,7 @@ export class AppViewModel {
   modal;
   
   // And here I have my business logic all in one place. No special handling
-  // is required just because I've put it in a modal custom element. It just 
+  // is required just because I've put it in the modal custom element. It just 
   // works.
   showTypedMessage() {
     alert(this.typedMessage);    
@@ -208,12 +207,12 @@ Okay. So it technically works, but it doesn't look like a modal at all. For many
 
   > .modal-content {
 
-    // I used flex in order to enable the body element to fill up as much of 
+    // I use flex in order to enable the body element to fill up as much of 
     // the modal window space as possible. 
     display: flex;
     flex-direction: column;
 
-    // I added some sizing properties to match what I need in my application
+    // I add some sizing properties to match what I need in my application
     width: 50vw;
     min-height: 20vh;
     margin: 20vh auto;
