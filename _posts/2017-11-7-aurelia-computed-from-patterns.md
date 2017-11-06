@@ -112,7 +112,7 @@ Though `@computedFrom` does work here, the above code suffers a few problems. Fi
 ```javascript
 export class MultipleOfValueConverter {
   toView(numbers, divisor) {
-    return numbers.filter((number) => number & divisor === 0);
+    return numbers.filter((number) => number % divisor === 0);
   }
 }
 ```
