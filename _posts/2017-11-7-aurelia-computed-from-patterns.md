@@ -53,7 +53,6 @@ Every problem you can solve this way can be solved directly within the templatin
 The `@computedFrom` decorator is limited to computing from properties directly on your view-model. Many have advocated for [extending the syntax](https://github.com/aurelia/binding/issues/309#issuecomment-186965603) to support properties of objects on your view-model as well.
 
 ```javascript
-// Note that this doesn't work!
 @computedFrom('pointA.x', 'pointA.y', 'pointB.x', 'pointB.y')
 get projectedDistance() {
   let xDist = this.pointB.x - this.pointA.x;
