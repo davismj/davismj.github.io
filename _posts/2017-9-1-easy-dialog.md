@@ -265,4 +265,4 @@ Okay. So it technically works, but it doesn't look like a modal at all. For many
 Now it looks like a modal. The most important thing, though, is that this is both much *smaller* and much more *extensible* in my project than a third party library. I do not have to depend on any developers, there is no chance that I will accidentally update to a breaking change, and I don't need to read through anyone else's code if I need to make changes to the style or the behavior of the component. Though it may take more time to build the component up front, I've found that relying on my own components saves me the most time over the life of the application.
 
 # Links
-[Working gist.run](https://gist.run/?id=040775f06aba5e955afd362ee60863aa)
+[Working gist.run](https://gist.run/?id=2304609727fb660311c5308c5e627158)
