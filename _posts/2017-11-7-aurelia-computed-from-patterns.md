@@ -4,8 +4,8 @@ layout: post
 title: Patterns for Computing Values in an Aurelia Template
 author: Matthew James Davis
 category: blog
-# thumb: blog/2017-11-7-aurelia-computed-from-patterns.png
-blurb: Is @computedFrom the best way to compute values in an Aurelia view?
+thumb: blog/2017-11-7-aurelia-computed-from-patterns.jpg
+blurb: Is @computedFrom the best way to compute values in an Aurelia view? Let's look at some better, faster, easier, and more robust patterns.
 tags: aurelia computedFrom templating view 
 
 published: true
