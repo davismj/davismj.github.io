@@ -102,7 +102,16 @@ main {
       margin-top: 6px;
     }
   }
+
+  .posts {
+    width: 100%; 
+
+    .post {
+      width: 100%;
+    }
+  }
 }
+
 
 section.modal {
   top: 0;
