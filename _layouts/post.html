@@ -1,14 +1,51 @@
----
-layout: default
----
-<article>
-	<header>
-		{{ page.title }}
-		<time>{{ page.date | date_to_string }}</time>
-	</header>
-	{{ content }}
-</article>
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+  <head>
+    {% include head.html %}
+    <meta name="twitter:card" content="summary" />
+    <title>{{ page.title }} - {{ site.name }}</title>
+    <meta name="og:title" content="{{ page.title }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% if page.blurb %}
+      <meta name="description" content="{{ page.blurb }}" />
+      <meta name="og:description" content="{{ page.blurb }}" />
+      <meta name="twitter:description" content="{{ page.blurb }}" />
+    {% endif %}
+    <meta name="og:type" content="article" />
+    <meta name="article:published_time" content="{{ page.date }}" />
+    <meta name="author" content="{{ page.author | default: site.author }}" />
+    <meta name="article:author" content="{{ page.author | default: site.author }}" />
+    <meta name="article:publisher" content="{{ site.url }}" />
+    {% if page.tags %}
+      <meta name="keywords" content="{{ page.tags | join: ',' }}" />
+      {% for tag in page.tags %}
+        <meta name="article:tag" content="{{ tag }}" />
+      {% endfor %}
+    {% endif %}
+    <meta name="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="twitter:site" content="{{ site.twitter }}" />
+    <meta name="twitter:creator" content="{{ site.twitter }}" />
+    <meta name="og:image" content="{{ site.url }}{{ page.thumb | default: site.logo }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.thumb | default: site.logo }}" />
+  </head>
 
-<footer>
-	{% include disqus.html %}
-</footer>
+  <body>
+    {% include nav.html %}
+    <main>
+      <article>
+        <header>
+          {{ page.title }}
+          <time>{{ page.date | date_to_string }}</time>
+        </header>
+        {{ content }}
+      </article>
+      <footer>
+        {% include disqus.html %}
+      </footer>
+    </main>
+    {% include subscription.html %}
+    {% include analytics.html %}
+    {% include shiv.html %}
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<section id="subscription-modal" class="modal">
+  <div id="modal-content">
+    <form onsubmit="return false;">
+      <h1>Get posts directly to your inbox</h1>
+      <p>I'll notify you of posts the day they come out. Don't worry, you'll never get more than one email a day, and I'll never share your email address with anyone else.</p>
+      <label>
+        Your email address
+        <input type="email" id="subscription-email" />
+      </label>
+      <div class="row text-sm text-right">
+        <button id="subscribe-button" class="text-lg" type="submit">Subscribe</button>
+        or <button class="text-sm" id="cancel-button">cancel</button>
+        <div class="pull-left">
+          or <a id="feed-link" href="http://davismj.me/feed.xml">click here for the raw feed</a>
+        </div>
+      </div>
+    </form>
+
+    <template id="subscribe-thanks">
+      <div class="text-center" style="margin:auto;">
+        <img src="/images/thanks.png" />
+        <h1>Thanks for signing up!</h1>
+      </div>
+    </template>
+
+  </div>
+</section>
+<script src="/subscription.js"></script>
