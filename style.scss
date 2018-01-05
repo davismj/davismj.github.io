@@ -250,6 +250,7 @@ main {
     border-radius: $unit;
     background-color: $bg-2;
     font-size: $text-md;
+    -webkit-overflow-scrolling: touch;
 
     header {
       margin-bottom: 2*$unit;
