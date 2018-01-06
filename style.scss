@@ -304,6 +304,20 @@ main {
 
     img {
       max-width: 100%;
+
+      &.float-left, &.float-right {
+        max-height: 400px;
+      }
+
+      &.float-left {
+         float: left; 
+         margin: 0 1rem 0.5rem 0;
+      }
+
+      &.float-right {
+        float: right;
+        margin: 0 0 0.5rem 1rem;
+      }
     }
   }
 
