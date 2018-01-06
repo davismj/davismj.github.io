@@ -47,7 +47,9 @@ As part of the EasyTerritory team my responsibilities included:
 Though there is no public facing version of the application, you can view a short demo video below. At the time of writing, the EasyTerritory team is setting interested customers up with free trial accounts.
 
 <div class="video">
-  <iframe src="https://www.youtube.com/embed/R4-uIlHWPG0" frameborder="0" allowfullscreen></iframe>
+  <video controls="controls" width="100%" poster="http://ezt-webapp.azurewebsites.net/wp-content/uploads/2017/10/VideoPoster.jpg">
+    <source src="https://downloads.easyterritory.com/videos/promo3.mp4" type="video/mp4" />
+  </video>
 </div>
 
 # Links
