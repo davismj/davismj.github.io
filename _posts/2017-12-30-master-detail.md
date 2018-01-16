@@ -196,4 +196,6 @@ router-view[name="side"]:empty {
 
 With a minimum of code, we were able to structure our view ports in order to quickly build a clean, animated, ux-optimized master detail page. Of course, this is just a quick example of the kind of opportunities afforded with the new view port configuration feature in the 1.5.0 release of the Aurelia router.
 
-For a working and more feature complete example, take a look at [this cryptocurrency demo app](http://davismj.me/perfect-master-detail).
+# <a href="http://davismj.me/perfect-master-detail" target="_blank">Live Demo</a>
+
+<iframe src="http://davismj.me/perfect-master-detail" style="height: 600px;"></iframe>
