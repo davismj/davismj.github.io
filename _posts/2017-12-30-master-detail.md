@@ -9,18 +9,17 @@ tags: aurelia router master-detail web-design css
 
 published: true
 ---
-
 I'm excited to announce that thanks to the hard work of Aurelia contributor [Jürgen Wenzel](http://github.com/jwx) the Aurelia router has just gotten a lot more powerful. In addition to a quick overview of the new features, we're going to look at an example of how to use these features to create the perfect master-detail page.
 
 # A New Way to Support Aurelia
 
-Before we get started, I'd like to announce my new Patreon page! Though I love running my consulting company [Foursails Technology Group](http://www.foursails.co) and turning my clients' dreams into reality, I have my own dream: I have taken over development of the Aurelia router and I've decided to dedicate more time to making Aurelia as great as possible. That's why I'm asking members of the Aurelia community who may not have time to contribute code to consider sponsoring my development of Aurelia. Click the link below to become a Patron.
+Before we get started, I'd like to announce my new Patreon page! Though I love running my consulting company [Foursails Technology Group](http://www.foursails.co) and turning my clients' dreams into reality, I have my own dream: I have taken over the development of the Aurelia router and I've decided to dedicate more time to making Aurelia as great as possible. That's why I'm asking members of the Aurelia community who may not have time to contribute code to consider sponsoring my development of Aurelia. Click the link below to become a Patron.
 
 <a href="https://www.patreon.com/bePatron?u=133362" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script> 
 
 # New Features in aurelia-router@1.5.0
 
-The new features in the aurelia-router are arguably some of the biggest since 1.0, and I'm excited to introduce them to you today. Both contributions come to you due in large part to the hard work of community member [Jürgen Wenzel](http://github.com/jwx)! The first set of features adds a great deal of power and flexibility to viiew ports, and we're going to take a look at how to leverage these features to build the perfect master-detail page. The second feature exposes enhanced information to the navigation properites of the router.
+The new features in the aurelia-router are arguably some of the biggest since 1.0, and I'm excited to introduce them to you today. Both contributions come to you due in large part to the hard work of community member [Jürgen Wenzel](http://github.com/jwx)! The first set of features adds a great deal of power and flexibility to view ports, and we're going to take a look at how to leverage these features to build the perfect master-detail page. The second feature exposes enhanced information to the navigation properties of the router.
 
 ## View Port Configuration
 
@@ -61,7 +60,7 @@ export class App {
       { route: 'users', name: 'users', viewPorts: { left: { moduleId: 'user/list' }, right: { moduleId: null } } }
     ]);
 
-    // However, we specify a special placeholder page when the right view port is emepty.
+    // However, we specify a special placeholder page when the right view port is empty.
     config.useViewPortDefaults({
       right: { moduleId: 'pages/placeholder' }
     })
@@ -71,7 +70,7 @@ export class App {
 
 ### Optional View Ports
 
-In addition to the new "empty" behavior, we've also added a "no change" behavior. If a view port configuration is not defined for a route, the router will skip routing on that view port entirely, leaving the view port untouched. If there is no existing content in the view port, i.e. when the application is first loaded, then then router will load the default for that view port.
+In addition to the new "empty" behavior, we've also added a "no change" behavior. If a view port configuration is not defined for a route, the router will skip routing on that view port entirely, leaving the view port untouched. If there is no existing content in the view port, i.e. when the application is first loaded, and then router will load the default for that view port.
 
 #### app.js 
 
@@ -93,7 +92,7 @@ export class App {
 }
 ```
 
-## Enhanced Navigation Properites
+## Enhanced Navigation Properties
 
 Prior to version 1.5.0, the router had `isNavigating`, `isExplicitNavigation`, and `isExplicitNavigationBack` properties which could either be observed or could be used in custom logic for special handling. 1.5.0 brings a few additional properties specific to the browser's history:
 
@@ -111,7 +110,7 @@ Typically, a master-detail view consists of a list or a complex record that has 
 
 There have always been patterns for building this in Aurelia. You might use an optional route pattern and compose the detail inside of the master view, or you might use a child router pattern, which is essentially the same. However, both of these strategies require that the detail view lives within master. This means that if you require your master and detail views to be side-by-side siblings, you're going to have to add some extra arbitrary templating to achieve this. Additionally, both strategies require adding extra code to check whether or not the detail route parameter is present and instructions on what to do if it isn't.
 
-Instead, lets use the new empty route configuration to define a master-only route and a master-detail route:
+Instead, let's use the new empty route configuration to define a master-only route and a master-detail route:
 
 #### app.js
 
@@ -131,7 +130,7 @@ configureRouter(config, router) {
 
 #### app.html
 
-```
+```html
 <template>
   <h1>${router.title}</h1>
 
