@@ -194,6 +194,7 @@ I have enough of these in a typical application that the time it takes writing a
 
 # Links
 
+[Full Working Demo](https://gist.run/?id=4ed6164d7edcf283f70ff1e6dd2164ef)<br />
 [Aurelia 2 Checkbox / Radio Button RFC](https://github.com/aurelia/aurelia/issues/447)<br />
 [StackOverflow question which inspired this post](https://stackoverflow.com/questions/58359355/how-do-i-create-a-select-all-checkbox-when-i-have-an-empty-array-as-my-checked-b/58438010#58438010)<br />
 [Aurelia Checkbox Binding Docs](https://aurelia.io/docs/binding/checkboxes/)
